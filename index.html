@@ -666,141 +666,36 @@
 
 <script>
 const DATA = [
-
-  // ──────────────────────────────────────────────
-  // JANUARI
-  // ──────────────────────────────────────────────
-
-  {id:1,title:"Chinese Government Scholarship (CSC) – Belt and Road Program (Type B)",funder:"China Scholarship Council (CSC)",link:"https://www.campuschina.org/"},
-  {id:2,title:"Beasiswa Tahfidz Universitas Nahdlatul Ulama Yogyakarta (UNU Jogja)",funder:"Universitas Nahdlatul Ulama Yogyakarta",link:"https://pmb.unu-jogja.ac.id/"},
-  {id:3,title:"NSTC International Internship Pilot Program (IIPP) 2026",funder:"National Science and Technology Council Taiwan",link:"https://iipp.tw/"},
-  {id:4,title:"Beasiswa Pesantren PeTIK",funder:"Pesantren PeTIK",link:"https://petik.or.id/"},
-  {id:5,title:"UNESCO World Heritage Decorated Farmhouses Scholarship",funder:"UNESCO",link:"https://whc.unesco.org/"},
-  {id:6,title:"ETH Robotics Student Fellowship (ETH RSF)",funder:"ETH Zürich",link:"https://ethz.ch/"},
-  {id:7,title:"Summer Research Program (SRP) Taiwan 2026",funder:"Study in Taiwan",link:"https://www.studyintaiwan.org/"},
-  {id:8,title:"Beasiswa Mitsui-Bussan Scholarship Program for Indonesia",funder:"Mitsui & Co., Ltd.",link:"https://www.mbkscholarship-id.com/"},
-  {id:9,title:"Beasiswa SMA Imam Hatip TDV",funder:"Türkiye Diyanet Vakfı",link:"https://diyanetvakfi.org.tr/"},
-  {id:10,title:"UPNVJT Scholarship for International Students",funder:"UPN Veteran Jawa Timur",link:"https://www.upnjatim.ac.id/"},
-
-  // ──────────────────────────────────────────────
-  // FEBRUARI
-  // ──────────────────────────────────────────────
-
-  {id:11,title:"Erasmus Mundus Joint Masters 2026/2027",funder:"European Commission",link:"https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en"},
-  {id:12,title:"Global Korea Scholarship (GKS-G) Graduate 2026",funder:"NIIED Korea",link:"https://www.studyinkorea.go.kr/"},
-  {id:13,title:"Stipendium Hungaricum 2026/2027",funder:"Government of Hungary",link:"https://stipendiumhungaricum.hu/"},
-  {id:14,title:"Swedish Institute Scholarship for Global Professionals (SISGP)",funder:"Swedish Institute",link:"https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/"},
-  {id:15,title:"Beasiswa Unggulan Kemdiktisaintek 2025 (Gelombang 2)",funder:"Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemdiktisaintek)",link:"https://beasiswaunggulan.kemdiktisaintek.go.id/"},
-  {id:16,title:"KAIST Undergraduate Research Program (URP)",funder:"KAIST",link:"https://www.kaist.ac.kr/"},
-
-  // ──────────────────────────────────────────────
-  // MARET
-  // ──────────────────────────────────────────────
-
-  {id:17,title:"Beasiswa DAAD Study Scholarships",funder:"DAAD Germany",link:"https://www.daad.de/en/"},
-  {id:18,title:"Fulbright Indonesian Student Program",funder:"AMINEF",link:"https://www.aminef.or.id/"},
-  {id:19,title:"TaiwanICDF Scholarship",funder:"Taiwan ICDF",link:"https://www.icdf.org.tw/"},
-  {id:20,title:"Beasiswa BCA Finance",funder:"BCA Finance",link:"https://bcafinance.co.id/"},
-  {id:21,title:"Beasiswa Riset BRIN",funder:"BRIN",link:"https://www.brin.go.id/"},
-
-  // ──────────────────────────────────────────────
-  // APRIL
-  // ──────────────────────────────────────────────
-
-  {id:22,title:"Beasiswa LPDP – Université Paris-Saclay",funder:"LPDP",link:"https://lpdp.kemenkeu.go.id/"},
-  {id:23,title:"Eisenhower Global Fellowship Program",funder:"Eisenhower Fellowships",link:"https://www.efworld.org/"},
-  {id:24,title:"Australia Awards Short Course",funder:"Australian Government",link:"https://www.australiaawardsindonesia.org/"},
-  {id:25,title:"BPM BAZNAS Jabar",funder:"BAZNAS Jawa Barat",link:"https://baznasjabar.org/"},
-  {id:26,title:"Beasiswa Perempuan Berdaya",funder:"Yayasan Perempuan Berdaya",link:"https://perempuanberdaya.id/"},
-
-  // ──────────────────────────────────────────────
-  // MEI
-  // ──────────────────────────────────────────────
-
-  {id:27,title:"Invest Your Talent in Italy",funder:"Government of Italy",link:"https://investyourtalentapplication.esteri.it/"},
-  {id:28,title:"Summer Camp SSE China",funder:"SSE University China",link:"https://www.sse.edu.cn/"},
-  {id:29,title:"Beasiswa BAZNAS Provinsi Riau",funder:"BAZNAS Riau",link:"https://baznas.riau.go.id/"},
-  {id:30,title:"Beasiswa Jenius UPI",funder:"Jenius",link:"https://www.jenius.com/"},
-  {id:31,title:"Beasiswa INSTIPER Yogyakarta",funder:"INSTIPER Yogyakarta",link:"https://instiperjogja.ac.id/"},
-  {id:32,title:"Beasiswa Berprestasi Bengkulu Utara",funder:"Pemerintah Bengkulu Utara",link:"https://bengkuluutarakab.go.id/"},
-  {id:33,title:"Beasiswa Calon Pelaut Pertamina Patra Niaga",funder:"Pertamina Patra Niaga",link:"https://pertaminapatraniaga.com/"},
-  {id:34,title:"Panasonic Scholarship UNPAD",funder:"Panasonic Indonesia",link:"https://www.panasonic.com/id/"},
-  {id:35,title:"Panasonic Scholarship Nasional",funder:"Panasonic Indonesia",link:"https://www.panasonic.com/id/"},
-  {id:36,title:"Beasiswa Wirausaha Kementerian Koperasi & UKM",funder:"Kementerian Koperasi dan UKM",link:"https://kemenkopukm.go.id/"},
-  {id:37,title:"Beasiswa Mitra Yayasan Khouw Kalbe",funder:"Yayasan Khouw Kalbe",link:"https://www.kalbe.co.id/"},
-  {id:38,title:"Research Grants Schemes ASEAN",funder:"ASEAN Foundation",link:"https://asean.org/"},
-  {id:39,title:"Bantuan Pendidikan Kebanksentralan BI",funder:"Bank Indonesia",link:"https://www.bi.go.id/"},
-  {id:40,title:"Beasiswa LPDP – UIII",funder:"LPDP",link:"https://uiii.ac.id/"},
-
-  // ──────────────────────────────────────────────
-  // JUNI
-  // ──────────────────────────────────────────────
-
-  {id:41,title:"Beasiswa LPDP Reguler 2026 Batch II",funder:"LPDP",link:"https://lpdp.kemenkeu.go.id/"},
-  {id:42,title:"Beasiswa Unggulan Kemdiktisaintek 2026",funder:"Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemdiktisaintek)",link:"https://beasiswaunggulan.kemdiktisaintek.go.id/"},
-  {id:43,title:"Beasiswa Pemprov DKI Jakarta",funder:"Pemprov DKI Jakarta",link:"https://jakarta.go.id/"},
-  {id:44,title:"JICA Development Studies Program",funder:"JICA",link:"https://www.jica.go.jp/"},
-  {id:45,title:"Beasiswa Yayasan Orbit",funder:"Yayasan Orbit",link:"https://orbitfutureacademy.id/"},
-
-  // ──────────────────────────────────────────────
-  // JULI
-  // ──────────────────────────────────────────────
-
-  {id:46,title:"Beasiswa Sampoerna Foundation",funder:"Sampoerna Foundation",link:"https://www.sampoernafoundation.org/"},
-  {id:47,title:"Beasiswa LPDP Afirmasi",funder:"LPDP",link:"https://lpdp.kemenkeu.go.id/"},
-  {id:48,title:"Türkiye Burslari",funder:"Government of Türkiye",link:"https://www.turkiyeburslari.gov.tr/"},
-  {id:49,title:"Beasiswa KIP Kuliah 2026",funder:"Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemdiktisaintek)",link:"https://kip-kuliah.kemdiktisaintek.go.id/"},
-  {id:50,title:"Beasiswa Tanoto Foundation",funder:"Tanoto Foundation",link:"https://www.tanotofoundation.org/"},
-
-  // ──────────────────────────────────────────────
-  // AGUSTUS
-  // ──────────────────────────────────────────────
-
-  {id:51,title:"Chevening Scholarship",funder:"UK Government",link:"https://www.chevening.org/"},
-  {id:52,title:"Beasiswa Pertamina Foundation",funder:"Pertamina Foundation",link:"https://pertaminafoundation.org/"},
-  {id:53,title:"Beasiswa Prestasi Telkom Indonesia",funder:"Telkom Indonesia",link:"https://www.telkom.co.id/"},
-  {id:54,title:"Gates Cambridge Scholarship",funder:"Gates Cambridge",link:"https://www.gatescambridge.org/"},
-  {id:55,title:"Beasiswa Astra International",funder:"Astra International",link:"https://www.astra.co.id/"},
-
-  // ──────────────────────────────────────────────
-  // SEPTEMBER
-  // ──────────────────────────────────────────────
-
-  {id:56,title:"KAIST Graduate Scholarship",funder:"KAIST",link:"https://www.kaist.ac.kr/"},
-  {id:57,title:"Beasiswa Djarum Plus",funder:"Djarum Foundation",link:"https://djarumbeasiswaplus.org/"},
-  {id:58,title:"POSTECH International Scholarship",funder:"POSTECH",link:"https://postech.ac.kr/"},
-  {id:59,title:"Commonwealth Scholarship",funder:"Commonwealth Scholarship Commission",link:"https://cscuk.fcdo.gov.uk/"},
-
-  // ──────────────────────────────────────────────
-  // OKTOBER
-  // ──────────────────────────────────────────────
-
-  {id:60,title:"Australia Awards Scholarship",funder:"Australian Government",link:"https://www.australiaawardsindonesia.org/"},
-  {id:61,title:"Beasiswa LPDP Reguler 2026 Batch III",funder:"LPDP",link:"https://lpdp.kemenkeu.go.id/"},
-  {id:62,title:"Beasiswa Karya Salemba Empat (KSE)",funder:"Yayasan KSE",link:"https://karyasalembaempat.com/"},
-
-  // ──────────────────────────────────────────────
-  // NOVEMBER
-  // ──────────────────────────────────────────────
-
-  {id:63,title:"MEXT Research Student Scholarship",funder:"MEXT Jepang",link:"https://www.studyinjapan.go.jp/"},
-  {id:64,title:"Beasiswa Fresh Graduate BNI",funder:"BNI",link:"https://www.bni.co.id/"},
-  {id:65,title:"Heinrich Böll Foundation Scholarship",funder:"Heinrich Böll Foundation",link:"https://www.boell.de/en/scholarships"},
-
-  // ──────────────────────────────────────────────
-  // DESEMBER
-  // ──────────────────────────────────────────────
-
-  {id:66,title:"Beasiswa MEXT Jepang (Jalur Universitas)",funder:"MEXT Jepang",link:"https://www.studyinjapan.go.jp/"},
-  {id:67,title:"Global Korea Scholarship (GKS-U)",funder:"NIIED Korea",link:"https://www.studyinkorea.go.kr/"},
-  {id:68,title:"Beasiswa Stipendium Hungaricum 2027/2028",funder:"Government of Hungary",link:"https://stipendiumhungaricum.hu/"},
-  {id:69,title:"Beasiswa LPDP Oxford & Cambridge",funder:"LPDP",link:"https://lpdp.kemenkeu.go.id/"},
-  {id:70,title:"Erasmus+ KA1 Mobility Scholarship",funder:"European Commission",link:"https://erasmus-plus.ec.europa.eu/"}
+  {id:1,title:"Beasiswa LPDP – Université Paris-Saclay Program Master 2026",level:["S2"],country:"Prancis",flag:"🇫🇷",type:"Luar Negeri",start:"17 Apr 2026",deadline:"18 Mei 2026",deadlineSort:"2026-05-18",funder:"LPDP (Pemerintah Indonesia)",coverage:"Full scholarship, biaya hidup, tiket pesawat, asuransi",req:["WNI dengan IPK min 3.0","TOEFL iBT 90 / IELTS 6.5","Belum pernah studi S2 di luar negeri"],desc:"Beasiswa kerja sama LPDP dengan Université Paris-Saclay untuk program Master 2 di Prancis. Mencakup biaya penuh termasuk tunjangan hidup dan tiket PP.",link:"https://lpdp.kemenkeu.go.id/en/beasiswa/kerjasama/beasiswa-lpdp-universite-paris-saclay/"},
+  {id:2,title:"Beasiswa Kerjasama LPDP – Universitas Islam Internasional Indonesia (UIII)",level:["S3"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"06 Mei 2026",deadline:"18 Mei 2026",deadlineSort:"2026-05-18",funder:"LPDP",coverage:"UKT penuh, biaya penelitian, tunjangan bulanan",req:["WNI, lulusan S2","IPK min 3.25","Usia maks 45 tahun"],desc:"Beasiswa khusus untuk program doktoral di Universitas Islam Internasional Indonesia (UIII), kerja sama dengan LPDP.",link:"https://uiii.ac.id/beasiswa"},
+  {id:3,title:"Beasiswa Jenius 2026 – Universitas Pendidikan Indonesia",level:["S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"01 Mei 2026",deadline:"18 Mei 2026",deadlineSort:"2026-05-18",funder:"Jenius (Bank BTPN)",coverage:"Uang kuliah penuh + tunjangan bulanan Rp 1 juta",req:["Mahasiswa aktif UPI","IPK min 3.0","Tidak sedang menerima beasiswa lain"],desc:"Jenius berkolaborasi dengan UPI memberikan beasiswa kepada mahasiswa berprestasi yang memiliki semangat berwirausaha.",link:"https://www.jenius.com/"},
+  {id:4,title:"Beasiswa INSTIPER Yogyakarta 2026",level:["S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"01 Mei 2026",deadline:"27 Mei 2026",deadlineSort:"2026-05-27",funder:"Institut Pertanian STIPER Yogyakarta",coverage:"Bebas UKT selama studi",req:["Lulusan SMA/SMK","Nilai rapor rata-rata min 75"],desc:"Beasiswa unggulan Institut Pertanian STIPER Yogyakarta untuk mahasiswa baru berprestasi dari seluruh Indonesia.",link:"https://instiperjogja.ac.id/"},
+  {id:5,title:"Beasiswa Berprestasi Bengkulu Utara 2026",level:["SMA"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"04 Mei 2026",deadline:"17 Mei 2026",deadlineSort:"2026-05-17",funder:"Pemda Bengkulu Utara",coverage:"Tunjangan pendidikan + perlengkapan belajar",req:["Siswa SMA/MA di Bengkulu Utara","Nilai rata-rata min 80","Aktif berorganisasi"],desc:"Beasiswa dari Pemerintah Daerah Bengkulu Utara untuk siswa SMA berprestasi dalam akademik maupun non-akademik.",link:"https://bengkuluutarakab.go.id/"},
+  {id:6,title:"Summer Camp SSE (School of Science and Engineering) 2026",level:["S1","S2"],country:"China",flag:"🇨🇳",type:"Luar Negeri",start:"01 Mei 2026",deadline:"15 Mei 2026",deadlineSort:"2026-05-15",funder:"SSE University China",coverage:"Akomodasi, makan, kegiatan program (fully funded)",req:["Mahasiswa aktif S1/S2","TOEFL 70 / IELTS 5.5"],desc:"Program Summer Camp prestisius di bidang sains dan teknik di salah satu universitas terkemuka China. Terbuka untuk mahasiswa internasional.",link:"https://sse.cuhk.edu.cn/"},
+  {id:7,title:"Beasiswa BAZNAS Provinsi Riau 2026",level:["S1","S2","S3"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"06 Mei 2026",deadline:"10 Okt 2026",deadlineSort:"2026-10-10",funder:"BAZNAS Riau",coverage:"Dana pendidikan Rp 3–8 juta/semester",req:["WNI Muslim, berasal dari Riau","IPK min 2.75"],desc:"Program beasiswa BAZNAS Provinsi Riau untuk seluruh jenjang pendidikan tinggi, diberikan berdasarkan prestasi dan kebutuhan.",link:"https://baznas.riau.go.id/"},
+  {id:8,title:"Eisenhower Global Fellowship Program 2027",level:["Non-Degree"],country:"Amerika Serikat",flag:"🇺🇸",type:"Luar Negeri",start:"13 Apr 2026",deadline:"15 Mei 2026",deadlineSort:"2026-05-15",funder:"Eisenhower Fellowships",coverage:"Fully funded: perjalanan, akomodasi, kegiatan",req:["Profesional muda usia 32–45 tahun","Rekam jejak kepemimpinan terbukti"],desc:"Program fellowship bergengsi asal AS untuk pemimpin muda dari seluruh dunia yang berfokus pada kepemimpinan global.",link:"https://efworld.org/"},
+  {id:9,title:"Bantuan Pendidikan Mahasiswa (BPM) BAZNAS Jabar 2026",level:["D3","D4","S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"05 Mei 2026",deadline:"13 Mei 2026",deadlineSort:"2026-05-13",funder:"BAZNAS Jawa Barat",coverage:"Dana pendidikan Rp 2–5 juta/semester",req:["Mahasiswa aktif D3/D4/S1","Berasal dari Jawa Barat","IPK min 2.75"],desc:"Bantuan Pendidikan Mahasiswa dari BAZNAS Jawa Barat untuk mahasiswa kurang mampu yang berprestasi.",link:"https://baznas.jabarprov.go.id/"},
+  {id:10,title:"Beasiswa Calon Pelaut Pertamina Patra Niaga 2026",level:["D3","D4"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"30 Apr 2026",deadline:"22 Mei 2026",deadlineSort:"2026-05-22",funder:"PT Pertamina Patra Niaga",coverage:"Biaya pendidikan penuh + tunjangan + jaminan karir",req:["Lulusan SMA/SMK","Usia 17–22 tahun","Tinggi badan min 162 cm","Sehat jasmani rohani"],desc:"Program beasiswa PT Pertamina Patra Niaga untuk mencetak pelaut profesional dengan jaminan karir di Pertamina.",link:"https://pertamina.com/id/pertamina-patra-niaga"},
+  {id:11,title:"Bantuan Pendidikan Kebanksentralan Bank Indonesia 2026",level:["D3","D4","S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"27 Apr 2026",deadline:"05 Jun 2026",deadlineSort:"2026-06-05",funder:"Bank Indonesia",coverage:"SPP/UKT penuh + biaya hidup Rp 750 ribu/bulan",req:["Mahasiswa D3/S1 semester 2–6","IPK min 2.75","Jurusan ekonomi/hukum/TI"],desc:"Program beasiswa bergengsi dari Bank Indonesia untuk mahasiswa berprestasi di bidang ekonomi, hukum, dan teknologi informasi.",link:"https://www.bi.go.id/id/tentang-bi/kemitraan/beasiswa/Contents/Default.aspx"},
+  {id:12,title:"Australia Awards Short Course – Mobilising Long-Term Capital",level:["S1","S2","S3"],country:"Australia",flag:"🇦🇺",type:"Luar Negeri",start:"25 Apr 2026",deadline:"31 Mei 2026",deadlineSort:"2026-05-31",funder:"Australian Government",coverage:"Fully funded: tiket, akomodasi, per diem",req:["Profesional di bidang keuangan/asuransi","TOEFL 85 / IELTS 6.0"],desc:"Program kursus singkat dari Australia Awards tentang reformasi modal jangka panjang melalui asuransi dan dana pensiun di Indonesia.",link:"https://australiaawardsindonesia.org/"},
+  {id:13,title:"Beasiswa Perempuan Berdaya 2026",level:["D3","S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"23 Apr 2026",deadline:"17 Mei 2026",deadlineSort:"2026-05-17",funder:"Yayasan Perempuan Berdaya",coverage:"UKT penuh + mentoring + networking",req:["Mahasiswi aktif D3/S1","IPK min 2.75","Komitmen pemberdayaan perempuan"],desc:"Beasiswa khusus perempuan yang mendukung mahasiswi dalam menyelesaikan studi sambil mengembangkan jiwa kepemimpinan.",link:"https://perempuanberdaya.org/"},
+  {id:14,title:"Panasonic Scholarship – Universitas Padjadjaran 2026",level:["D3","D4"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"30 Apr 2026",deadline:"26 Mei 2026",deadlineSort:"2026-05-26",funder:"Panasonic Indonesia",coverage:"SPP penuh + uang buku + tunjangan prestasi",req:["Mahasiswa aktif UNPAD D3/D4","IPK min 3.0","Tidak sedang menerima beasiswa lain"],desc:"Beasiswa Panasonic untuk mahasiswa vokasi UNPAD yang berprestasi di bidang teknik, elektronika, dan teknologi.",link:"https://www.panasonic.com/id/corporate/sustainability/scholarship.html"},
+  {id:15,title:"Beasiswa Wirausaha Kementerian Koperasi & UKM Batch 3 2026",level:["Non-Degree"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"01 Mei 2026",deadline:"25 Mei 2026",deadlineSort:"2026-05-25",funder:"Kementerian Koperasi & UKM",coverage:"Modal usaha + pelatihan + mentoring bisnis",req:["WNI usia 18–35 tahun","Memiliki ide/bisnis yang berjalan","Komitmen wirausaha"],desc:"Program beasiswa wirausaha dari pemerintah untuk mendukung generasi muda yang ingin mengembangkan bisnis inovatif.",link:"https://kemenkopukm.go.id/"},
+  {id:16,title:"Beasiswa Mitra Yayasan Khouw Kalbe 2026",level:["SMA","D3"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"01 Mei 2026",deadline:"31 Mei 2026",deadlineSort:"2026-05-31",funder:"Yayasan Khouw Kalbe",coverage:"Dana pendidikan + bimbingan akademik",req:["Pelajar/mahasiswa berprestasi","Keluarga kurang mampu","Nilai min 80"],desc:"Beasiswa sosial dari Yayasan Khouw Kalbe untuk pelajar dan mahasiswa dari keluarga kurang mampu yang memiliki prestasi.",link:"https://kalbe.co.id/csr"},
+  {id:17,title:"Beasiswa Panasonic Scholarship Nasional 2026",level:["D3","D4","S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"01 Mei 2026",deadline:"13 Mei 2026",deadlineSort:"2026-05-13",funder:"Panasonic Indonesia",coverage:"SPP + tunjangan bulanan + laptop",req:["IPK min 3.0","Jurusan teknik/sains","Aktif berorganisasi"],desc:"Beasiswa nasional Panasonic Scholarship 2026 untuk mahasiswa D3/D4/S1 terbaik di bidang teknik dan ilmu pengetahuan.",link:"https://www.panasonic.com/id/corporate/sustainability/scholarship.html"},
+  {id:18,title:"Beasiswa Invest Your Talent in Italy (IYT) 11th Edition",level:["S2"],country:"Italia",flag:"🇮🇹",type:"Luar Negeri",start:"20 Apr 2026",deadline:"11 Mei 2026",deadlineSort:"2026-05-11",funder:"Pemerintah Italia",coverage:"Bebas biaya kuliah + tunjangan hidup EUR 900/bulan",req:["Sarjana IPK min 3.0","IELTS 6.0 / TOEFL 80","Usia maks 28 tahun"],desc:"Program beasiswa pemerintah Italia untuk mahasiswa S2 internasional di universitas-universitas terkemuka Italia.",link:"https://www.esteri.it/en/opportunita/borse-di-studio/per-cittadini-stranieri/"},
+  {id:19,title:"Beasiswa LPDP Reguler 2026 Batch II",level:["S2","S3"],country:"Berbagai Negara",flag:"🌐",type:"Luar Negeri",start:"01 Jun 2026",deadline:"31 Jul 2026",deadlineSort:"2026-07-31",funder:"LPDP (Pemerintah Indonesia)",coverage:"Full scholarship: kuliah, biaya hidup, perjalanan, asuransi, darurat",req:["WNI, IPK min 3.0","TOEFL iBT 80 / IELTS 6.5","Tidak sedang studi S2/S3"],desc:"Beasiswa flagship pemerintah Indonesia dari LPDP untuk program S2 dan S3 di universitas terbaik dunia.",link:"https://lpdp.kemenkeu.go.id/en/beasiswa/umum/beasiswa-reguler/"},
+  {id:20,title:"Beasiswa Turkiye Burslari 2027",level:["S1","S2","S3"],country:"Turki",flag:"🇹🇷",type:"Luar Negeri",start:"01 Jan 2027",deadline:"20 Feb 2027",deadlineSort:"2027-02-20",funder:"Pemerintah Turki",coverage:"Full + tunjangan USD 500/bulan + kursus bahasa Turki",req:["TOEFL 70 / IELTS 5.0","Usia maks 28 th (S1), 30 th (S2), 35 th (S3)"],desc:"Beasiswa bergengsi dari pemerintah Turki yang ditawarkan untuk ribuan mahasiswa internasional setiap tahun.",link:"https://www.turkiyeburslari.gov.tr/"},
+  {id:21,title:"Global Korea Scholarship (GKS-U) 2027",level:["S1"],country:"Korea Selatan",flag:"🇰🇷",type:"Luar Negeri",start:"Maret 2027",deadline:"April 2027",deadlineSort:"2027-04-01",funder:"Pemerintah Korea Selatan (NIIED)",coverage:"Full + tunjangan KRW 900.000/bulan + kursus bahasa Korea",req:["Usia maks 25 tahun","GPA min 80/100","Bukan WN Korea"],desc:"Beasiswa pemerintah Korea Selatan untuk mahasiswa internasional jenjang S1 di universitas-universitas Korea.",link:"https://www.studyinkorea.go.kr/en/sub/gks/allnew_gks_u.do"},
+  {id:22,title:"Beasiswa MEXT Jepang 2027",level:["S1","S2","S3"],country:"Jepang",flag:"🇯🇵",type:"Luar Negeri",start:"Mei 2027",deadline:"Jun 2027",deadlineSort:"2027-06-01",funder:"Kementerian Pendidikan Jepang (Monbukagakusho)",coverage:"Full + tunjangan JPY 145.000/bulan + tiket PP",req:["IPK min 3.0","Usia maks 35 tahun","Bahasa Jepang/Inggris"],desc:"Beasiswa flagship pemerintah Jepang untuk mahasiswa internasional di jenjang S1, S2, dan S3.",link:"https://www.studyinjapan.go.jp/en/smap_stopj-applications_mext.html"},
+  {id:23,title:"Chevening Scholarship UK 2027/2028",level:["S2"],country:"Inggris",flag:"🇬🇧",type:"Luar Negeri",start:"Agt 2026",deadline:"Nov 2026",deadlineSort:"2026-11-01",funder:"UK Government (FCDO)",coverage:"Full scholarship + tunjangan GBP 1.347/bulan",req:["Pengalaman kerja min 2 tahun","IELTS 6.5","Komitmen kembali ke negara asal"],desc:"Beasiswa bergengsi pemerintah Inggris untuk pemimpin masa depan dari seluruh dunia untuk studi S2 di universitas UK.",link:"https://www.chevening.org/"},
+  {id:24,title:"Erasmus Mundus Joint Masters 2026",level:["S2"],country:"Eropa",flag:"🇪🇺",type:"Luar Negeri",start:"Okt 2025",deadline:"Jan 2026",deadlineSort:"2026-01-31",funder:"European Commission",coverage:"Full + tunjangan EUR 1.400/bulan + asuransi",req:["Sarjana/sederajat","IELTS 6.5","Bahasa program konsorsium"],desc:"Program beasiswa Uni Eropa untuk program master bersama antar universitas Eropa terkemuka.",link:"https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en"},
+  {id:25,title:"Beasiswa Djarum Plus 2027",level:["S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"Maret 2027",deadline:"Apr 2027",deadlineSort:"2027-04-01",funder:"Djarum Foundation",coverage:"Rp 750.000/bulan + program pengembangan soft skills",req:["Mahasiswa S1 semester 4–6","IPK min 3.2","Aktif berorganisasi"],desc:"Beasiswa bergengsi dari Djarum Foundation yang tidak hanya memberikan dukungan finansial tapi juga pengembangan diri dan networking.",link:"https://djarumbeasiswa.com/"},
+  {id:26,title:"Beasiswa Unggulan Kemdikbudristek 2026",level:["S1","S2","S3"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"Juni 2026",deadline:"Juli 2026",deadlineSort:"2026-07-31",funder:"Kemendikbudristek",coverage:"SPP + biaya hidup + asuransi kesehatan",req:["WNI, IPK min 3.0 (umum) / 3.25 (berprestasi)","Tidak penerima beasiswa pemerintah lain"],desc:"Program beasiswa prestisius dari Kementerian Pendidikan untuk masyarakat berprestasi dan penyandang disabilitas S1–S3.",link:"https://beasiswaunggulan.kemdikbud.go.id/"},
+  {id:27,title:"Beasiswa KIP Kuliah 2026",level:["D3","D4","S1"],country:"Indonesia",flag:"🇮🇩",type:"Dalam Negeri",start:"Feb 2026",deadline:"Okt 2026",deadlineSort:"2026-10-01",funder:"Kemendikbudristek",coverage:"Biaya kuliah + biaya hidup Rp 700.000–1.400.000/bulan",req:["WNI lulusan SMA/SMK/MA","Memiliki keterbatasan ekonomi","Lulus SNBP/SNBT/Mandiri"],desc:"Program Kartu Indonesia Pintar Kuliah dari pemerintah untuk mahasiswa tidak mampu yang berprestasi di seluruh Indonesia.",link:"https://kip-kuliah.kemdikbud.go.id/"},
+  {id:28,title:"Research Grants Schemes (RGS) ASEAN 2026",level:["S2","S3"],country:"ASEAN",flag:"🌏",type:"Luar Negeri",start:"20 Apr 2026",deadline:"15 Mei 2026",deadlineSort:"2026-05-15",funder:"ASEAN Research Foundation",coverage:"Dana penelitian USD 5.000–20.000 + disseminasi",req:["Peneliti ASEAN","Proposal kolaborasi lintas negara","Publikasi internasional"],desc:"Hibah penelitian untuk mendorong kolaborasi riset di antara negara-negara ASEAN dalam berbagai bidang prioritas.",link:"https://asean.org/"},
 ];
 
-// ============================================================
-// DATA NEGARA – Negara tujuan beasiswa
-// ============================================================
 const NEGARA = [
   {name:"Indonesia",flag:"🇮🇩",count:"150+"},
   {name:"Australia",flag:"🇦🇺",count:"25+"},
@@ -814,18 +709,12 @@ const NEGARA = [
   {name:"Italia",flag:"🇮🇹",count:"10+"},
   {name:"Prancis",flag:"🇫🇷",count:"14+"},
   {name:"China",flag:"🇨🇳",count:"28+"},
-  {name:"Taiwan",flag:"🇹🇼",count:"18+"},
-  {name:"Swiss",flag:"🇨🇭",count:"8+"},
-  {name:"Swedia",flag:"🇸🇪",count:"10+"},
-  {name:"Hungaria",flag:"🇭🇺",count:"10+"},
-  {name:"Belgia",flag:"🇧🇪",count:"8+"},
   {name:"Brunei",flag:"🇧🇳",count:"8+"},
   {name:"Malaysia",flag:"🇲🇾",count:"12+"},
+  {name:"Hungaria",flag:"🇭🇺",count:"10+"},
+  {name:"Belgia",flag:"🇧🇪",count:"8+"},
   {name:"UEA",flag:"🇦🇪",count:"9+"},
   {name:"Rumania",flag:"🇷🇴",count:"7+"},
-  {name:"Eropa (Multi)",flag:"🇪🇺",count:"20+"},
-  {name:"ASEAN",flag:"🌏",count:"15+"},
-  {name:"Berbagai Negara",flag:"🌐",count:"50+"},
 ];
 const TIPS = [
   {n:"01",t:"Mulai dari Esai yang Kuat",p:"Esai motivasi adalah jantung dari setiap aplikasi beasiswa. Tunjukkan siapa kamu, apa yang mendorongmu, dan bagaimana beasiswa ini akan mengubah hidupmu. Hindari klise — ceritakan kisah nyata yang spesifik dan berkesan."},
